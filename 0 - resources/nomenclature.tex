@@ -1,0 +1,49 @@
+% Set from here the subgroups for the nomenclaures
+\renewcommand\nomgroup[1]{%
+    \item[\bfseries
+    \ifstrequal{#1}{A}{Acronyms}{%
+    \ifstrequal{#1}{G}{Geometrics}{%
+    \ifstrequal{#1}{T}{Thermodynamics}{%
+    \ifstrequal{#1}{E}{Economics}{}}}}%
+]}
+
+% Add names to different subgroups from here
+\nomenclature[A]{COP}{Coefficient Of Performance}
+\nomenclature[A]{CHP}{Combined Heat and Power}
+\nomenclature[A]{LCOH}{Levelized Cost Of Heat, \textit{c\euro/kWh}}
+\nomenclature[A]{HTHP}{High Temperature Heat Pump}
+\nomenclature[A]{AHT}{Absorption Heat Transformer}
+\nomenclature[A]{LMTD}{Logarithmic Mean Temperature Difference}
+\nomenclature[A]{DH}{District Heating}
+\nomenclature[A]{NVP}{Net Present Value, \textit{\euro}}
+
+\nomenclature[G]{$d$}{Pipeline diameter, \textit{m}}
+\nomenclature[G]{$s_{ins}$}{Pipeline insulation thickness, \textit{m}}
+
+\nomenclature[T]{$r_{tot}$}{Total thermal resistance, \textit{K/W}}
+\nomenclature[T]{$Nu$}{Nusselt number}
+\nomenclature[T]{$Re$}{Reynolds number}
+\nomenclature[T]{$Pr$}{Prandtl number}
+\nomenclature[T]{$k$}{thermal conductivity, \textit{W/(m K)}}
+\nomenclature[T]{$\dot{m}$}{Mass flow rate, \textit{kg/s}}
+\nomenclature[T]{$\dot{W}_{\Box}$}{Mechanical power, \textit{kW}}
+\nomenclature[T]{$\dot{Q}_{\Box}$}{Heat flux, \textit{kW}}
+\nomenclature[T]{$\eta_{exergy}$}{Exergy efficiency}
+
+
+\nomenclature[E]{$C_{\Box}$}{Absolute cost, \textit{\euro}}
+\nomenclature[E]{$C_{prod}$}{Production investment cost, \textit{\euro}}
+\nomenclature[E]{$C_{tot}$}{Transport investment cost, \textit{\euro}}
+\nomenclature[E]{$c_{\Box}$}{Specific cost, \textit{\euro/kWh}}
+\nomenclature[E]{$c_{el}$}{Electricity cost, \textit{\euro/kWh}}
+
+\nomenclature[E]{$C_{om}$}{Operation and maintenance cost, \textit{\euro/year}}
+\nomenclature[E]{$OM_{ratio}$}{Ratio between $C_{om}$ and $C_{tot}$}
+\nomenclature[E]{$CF_t$}{Yearly cash flow, \textit{\euro/year}}
+\nomenclature[E]{$h_{y}$}{Yearly operational time, \textit{hours}}
+\nomenclature[E]{$L_e$}{System operational life, \textit{years}}
+\nomenclature[E]{$i$}{Interest rate}
+
+\small
+\printnomenclature
+\normalsize
